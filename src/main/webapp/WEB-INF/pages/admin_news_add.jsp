@@ -1,24 +1,18 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 云飘
-  Date: 2020/6/4
-  Time: 15:01
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>添加公告</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="/static/js/jquery-3.2.1.js"></script>
-    <script src="/static/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css"/>">
+    <script src="<c:url value="/static/js/jquery-3.2.1.js"/>"></script>
+    <script src="<c:url value="/static/js/bootstrap.min.js"/>" ></script>
    <style>
        label{
            font-size: 30px;
        }
    </style>
 </head>
-<body background="/static/img/1583851799.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+<body background="<c:url value="/static/img/1583851799.jpg"/>" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
 
 <nav style="position:fixed;z-index: 999;width: 100%;background-color:#122b40" class="navbar navbar-default"
      role="navigation">
@@ -91,7 +85,7 @@
 </nav>
 
 
-<form role="form" action="/admin_news_add_do.html" method="post">
+<form role="form" action="<c:url value="/admin_news_add_do.html"/>" method="post">
     <div class="form-group" style="position: relative; top: 100px;left: 300px;">
         <label for="newsTitle">公告标题</label>
         <input type="text" class="form-control" placeholder="输入标题...." style="width: 300px;" name="newsTitle" id="newsTitle">

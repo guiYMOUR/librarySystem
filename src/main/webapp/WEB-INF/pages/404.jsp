@@ -96,7 +96,7 @@
     <script>
         var i =3;
         function djs() {
-            if(i==0){
+            if(i === 0){
                 window.history.back();
             }
             document.getElementById("num").innerText=i--;

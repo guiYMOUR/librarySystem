@@ -1,18 +1,11 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 云飘
-  Date: 2020/6/4
-  Time: 22:01
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>公告详情</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="/static/js/jquery-3.2.1.js"></script>
-    <script src="/static/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css"/>">
+    <script src="<c:url value="/static/js/jquery-3.2.1.js"/>"></script>
+    <script src="<c:url value="/static/js/bootstrap.min.js"/>" ></script>
     <style>
       .panel  a{
             position: relative;

@@ -1,23 +1,19 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>图书信息添加</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="/static/js/jquery-3.2.1.js"></script>
-    <script src="/static/js/bootstrap.min.js" ></script>
-    <script src="/static/js/js.cookie.js"></script>
+    <link rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css"/>">
+    <script src="<c:url value="/static/js/jquery-3.2.1.js"/>"></script>
+    <script src="<c:url value="/static/js/bootstrap.min.js"/>" ></script>
+    <script src="<c:url value="/static/js/js.cookie.js"/>"></script>
     <style>
         .form-group {
             margin-bottom: 0;
         }
     </style>
-<%--    <script>--%>
-<%--        $(function () {--%>
-<%--            $('#header').load('admin_header.html');--%>
-<%--        })--%>
-<%--    </script>--%>
 </head>
-<body background="/static/img/1583851799.jpg" style=" background-repeat:no-repeat ;
+<body background="<c:url value="/static/img/1583851799.jpg"/>" style=" background-repeat:no-repeat ;
 background-size:100% 100%;
 background-attachment: fixed;">
 
@@ -25,7 +21,7 @@ background-attachment: fixed;">
      role="navigation">
     <div class="container-fluid">
         <div class="navbar-header" style="margin-left: 8%;margin-right: 1%">
-            <a class="navbar-brand" href="admin_main.html" style="font-family: 华文行楷; font-size: 250%; color: white">图书管理系统</a>
+            <a class="navbar-brand" href="admin_main.html" style="font-family: 华文行楷, serif; font-size: 250%; color: white">图书管理系统</a>
         </div>
         <div class="collapse navbar-collapse" >
             <ul class="nav navbar-nav navbar-left">

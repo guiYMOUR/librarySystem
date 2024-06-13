@@ -10,10 +10,10 @@
 <html>
 <head>
     <title>预约</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script type="text/javascript" src="/static/js/jquery-3.2.1.js"></script>
-    <script src="/static/js/bootstrap.min.js" ></script>
-    <script src="/static/js/js.cookie.js"></script>
+    <link rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css"/>">
+    <script type="text/javascript" src="<c:url value="/static/js/jquery-3.2.1.js"/>"></script>
+    <script src="<c:url value="/static/js/bootstrap.min.js"/>" ></script>
+    <script src="<c:url value="/static/js/js.cookie.js"/>"></script>
     <style>
         .panel-body div{
             margin-top: 20px;

@@ -1,10 +1,11 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>图书馆首页</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css"/>">
 
-    <script src="/static/js/js.cookie.js"></script>
+    <script src="<c:url value="/static/js/js.cookie.js"/>"></script>
 <style>
     #login{
         height: 50%;
@@ -25,17 +26,17 @@
     }
 </style>
 </head>
-<body background="/static/img/1583851799.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;background-attachment: fixed">
+<body background="<c:url value="/static/img/1583851799.jpg"/>" style="background-repeat: no-repeat; background-size: 100% 100%;background-attachment: fixed">
 <%--<c:if test="test=${!empty error}">--%>
 <%--    <script>--%>
 <%--        alert(${error});--%>
 <%--        window.location.href="/tologin";--%>
 <%--    </script>--%>
 <%--</c:if>--%>
-<h2 style="text-align: center; color: white; font-family: '华文行楷'; font-size: 500%">图 书 馆</h2>
+<h2 style="text-align: center; color: white; font-family: '华文行楷', serif; font-size: 500%">图 书 馆</h2>
 
 <div class="panel panel-default" id="login">
-     <div style="color: #CCCCCC;left: 350px;position: relative;"><h3><a href="/reader_register.html">注册</a></h3></div>
+     <div style="color: #CCCCCC;left: 350px;position: relative;"><h3><a href="<c:url value="/reader_register.html"/>">注册</a></h3></div>
     <div class="panel-body">
         <div class="form-group">
             <label for="id">账号</label>
@@ -57,7 +58,7 @@
     </div>
 </div>
 
-<script src="/static/js/jquery-3.2.1.js"></script>
+<script src="<c:url value="/static/js/jquery-3.2.1.js"/>"></script>
 <script type="text/javascript">
     $("#id").keyup(
         function () {
@@ -98,10 +99,10 @@
            let id=$("#id").val()
           let password=$("#passwd").val()
           let checked=$("#remember").prop("checked")
-          if (id == '') {
+          if (id === '') {
               $("#info").text("提示:账号不能为空");
           }
-          else if( passwd ==''){
+          else if( passwd ===''){
               $("#info").text("提示:密码不能为空");
           }
           else if(isNaN( id )){

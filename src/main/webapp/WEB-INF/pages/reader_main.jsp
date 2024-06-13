@@ -3,10 +3,10 @@
 <html>
 <head>
     <title>${readercard.username}的主页</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script type="text/javascript" src="/static/js/jquery-3.2.1.js"></script>
-    <script src="/static/js/bootstrap.min.js" ></script>
-    <script src="/static/js/js.cookie.js"></script>
+    <link rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css"/>">
+    <script type="text/javascript" src="<c:url value="/static/js/jquery-3.2.1.js"/>"></script>
+    <script src="<c:url value="/static/js/bootstrap.min.js"/>" ></script>
+    <script src="<c:url value="/static/js/js.cookie.js"/>"></script>
     <style>
         .content{
             width: 350px;
@@ -90,7 +90,7 @@
        }
     </style>
 </head>
-<body background="/static/img/1583851799.jpg" style=" background-repeat:no-repeat ;
+<body background="<c:url value="/static/img/1583851799.jpg"/>" style=" background-repeat:no-repeat ;
 background-size:100% 100%;
 background-attachment: fixed;">
 

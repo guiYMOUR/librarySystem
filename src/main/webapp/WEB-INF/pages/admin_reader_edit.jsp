@@ -1,18 +1,19 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>编辑读者信息《 ${readerInfo.readerId}》</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="/static/js/jquery-3.2.1.js"></script>
-    <script src="/static/js/bootstrap.min.js" ></script>
-    <script src="/static/js/js.cookie.js"></script>
+    <link rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css"/>">
+    <script src="<c:url value="/static/js/jquery-3.2.1.js"/>"></script>
+    <script src="<c:url value="/static/js/bootstrap.min.js"/>" ></script>
+    <script src="<c:url value="/static/js/js.cookie.js"/>"></script>
     <script>
         $(function () {
             $('#header').load('admin_header.html');
         })
     </script>
 </head>
-<body background="/static/img/1583851799.jpg" style=" background-repeat:no-repeat ;
+<body background="<c:url value="/static/img/1583851799.jpg"/>" style=" background-repeat:no-repeat ;
 background-size:100% 100%;
 background-attachment: fixed;">
 <%--<div id="header" style="padding-bottom: 80px"></div>--%>

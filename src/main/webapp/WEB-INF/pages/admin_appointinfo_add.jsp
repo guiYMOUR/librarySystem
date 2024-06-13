@@ -1,27 +1,21 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 云飘
-  Date: 2020/6/5
-  Time: 1:01
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>发布预约信息</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="/static/js/jquery-3.2.1.js"></script>
-    <script src="/static/js/bootstrap.min.js" ></script>
-    <script src="/static/js/js.cookie.js"></script>
+    <link rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css"/>">
+    <script src="<c:url value="/static/js/jquery-3.2.1.js"/>"></script>
+    <script src="<c:url value="/static/js/bootstrap.min.js"/>" ></script>
+    <script src="<c:url value="/static/js/js.cookie.js"/>"></script>
 </head>
-<body background="/static/img/1583851799.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+<body background="<c:url value="/static/img/1583851799.jpg"/>" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
 
 
 <nav style="position:fixed;z-index: 999;width: 100%;background-color:#122b40" class="navbar navbar-default"
      role="navigation">
     <div class="container-fluid">
         <div class="navbar-header" style="margin-left: 8%;margin-right: 1%">
-            <a class="navbar-brand" href="admin_main.html" style="font-family: 华文行楷; font-size: 250%; color: white">图书管理系统</a>
+            <a class="navbar-brand" href="admin_main.html" style="font-family: 华文行楷, serif; font-size: 250%; color: white">图书管理系统</a>
         </div>
         <div class="collapse navbar-collapse" >
             <ul class="nav navbar-nav navbar-left">
@@ -120,7 +114,7 @@
                 <input type="submit" value="确定" class="btn btn-success col-lg-2" class="text-left" style="position: relative;top: 10px;">
                 <script>
                     $("#addAppointInfo").submit(function () {
-                        if($("#appointTime").val()==''||$("#appointText").val()==''||$("#reappointNum").val()==''||$("#appointIns").val()==''||$("#appointRole").val()==''){
+                        if($("#appointTime").val() === ''||$("#appointText").val() === ''||$("#reappointNum").val() === ''||$("#appointIns").val() === ''||$("#appointRole").val() === ''){
                             alert("请填入完整的预约编辑信息！");
                             return false;
                         }
