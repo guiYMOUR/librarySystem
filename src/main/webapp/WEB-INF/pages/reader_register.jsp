@@ -26,7 +26,7 @@ background-attachment: fixed;">
     <!-- Default panel contents -->
     <div class="panel-heading">注册借阅证</div>
     <div class="panel-body">
-        <form class="form-horizontal" action="/reader_register.do" method="post">
+        <form class="form-horizontal" action="<c:url value="/reader_register.do"/>" method="post">
             <div class="form-group">
                 <label for="name" class="col-sm-2 control-label">姓名:</label>
                 <div class="col-sm-10">
