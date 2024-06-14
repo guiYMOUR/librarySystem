@@ -27,12 +27,6 @@
 </style>
 </head>
 <body background="<c:url value="/static/img/1583851799.jpg"/>" style="background-repeat: no-repeat; background-size: 100% 100%;background-attachment: fixed">
-<%--<c:if test="test=${!empty error}">--%>
-<%--    <script>--%>
-<%--        alert(${error});--%>
-<%--        window.location.href="/tologin";--%>
-<%--    </script>--%>
-<%--</c:if>--%>
 <h2 style="text-align: center; color: white; font-family: '华文行楷', serif; font-size: 500%">图 书 馆</h2>
 
 <div class="panel panel-default" id="login">
@@ -119,7 +113,7 @@
                           $("#info").text("提示:账号或密码错误！");
                       } else if (data.stateCode.trim() === "1") {
                           $("#info").text("提示:登陆成功，跳转中...");
-                          window.location.href="/admin_main.html";
+                          window.location.href="/guiy2_war_exploded/admin_main.html";
                       } else if (data.stateCode.trim() === "2") {
                           if(remember){
                               rememberLogin(id,passwd,remember);
@@ -127,7 +121,7 @@
                               Cookies.remove('loginStatus');
                           }
                           $("#info").text("提示:登陆成功，跳转中...");
-                          window.location.href="/reader_admin";
+                          window.location.href="/guiy2_war_exploded/reader_admin";
 
                       }
                   }

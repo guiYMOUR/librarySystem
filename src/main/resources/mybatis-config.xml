@@ -19,7 +19,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.bai.pojo"/>
+        <package name="com.example.guiy2.pojo"/>
     </typeAliases>
 
 </configuration>
